@@ -1,3 +1,5 @@
+import Banner from "../Banner/Banner";
+
 const Navbar = () => {
   return (
     <div>
@@ -5,7 +7,7 @@ const Navbar = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* Page content here */}
-          <label htmlFor="my-drawer" className="btn  drawer-button">
+          <label htmlFor="my-drawer" className="drawer-button p-8 text-white cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -27,7 +29,7 @@ const Navbar = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu w-80 min-h-full bg-black text-base-content flex justify-center items-center">
+          <ul className="menu w-80 min-h-full bg-[#080202] text-base-content flex justify-center items-center">
             {/* Sidebar content here */}
            <p className="text-4xl text-black my-2 rounded-sm  bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
            <p className="text-4xl text-black my-2 rounded-sm bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
@@ -35,6 +37,7 @@ const Navbar = () => {
            <p className="text-4xl text-black my-2 rounded-sm bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
           </ul>
         </div>
+      
       </div>
     </div>
   );

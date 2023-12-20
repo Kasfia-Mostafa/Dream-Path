@@ -1,9 +1,10 @@
-import Navbar from "../MainPage/Navbar/Navbar";
+import Banner from "../MainPage/Banner/Banner";
+
 
 const MainLayout = () => {
   return (
     <div>
-      <Navbar></Navbar>
+     <Banner></Banner>
     </div>
   );
 };
