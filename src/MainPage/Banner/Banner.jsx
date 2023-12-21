@@ -1,4 +1,4 @@
-import Navbar from "../Navbar/Navbar";
+
 
 const Banner = () => {
   return (
@@ -14,9 +14,9 @@ const Banner = () => {
         <div className="absolute text-9xl top-80 right-96 text-white font-extrabold ">
           <h2>Dream Path</h2>
           <div>
-            <div className="w-40 h-14 bg-white ml-3 my-5"></div>
+            <div className="w-40 h-14 bg-white ml-5 my-5"></div>
             <h2 className="text-2xl font-bold absolute bottom-8 left-20 text-purple-700">
-              Get Star<span className="text-white">ted</span>
+              Let's Exp<span className="text-white"> lore</span>
             </h2>
           </div>
         </div>
