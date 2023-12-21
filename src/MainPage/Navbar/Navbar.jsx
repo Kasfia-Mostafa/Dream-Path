@@ -1,43 +1,94 @@
-
 const Navbar = () => {
   return (
-    <div>
-      <div className="drawer">
-        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
-          {/* Page content here */}
-          <label htmlFor="my-drawer" className="drawer-button p-8 text-white cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="inline-block w-5 h-5 stroke-current"
+    <div className="bg-black text-white">
+      <div className="navbar max-w-7xl mx-auto">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </label>
+              <li>
+                <a>Item 1</a>
+              </li>
+             
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
+          </div>
+          <a className="btn btn-ghost text-xl">Dream Path</a>
         </div>
-        <div className="drawer-side">
-          <label
-            htmlFor="my-drawer"
-            aria-label="close sidebar"
-            className="drawer-overlay"
-          ></label>
-          <ul className="menu w-80 min-h-full bg-[#080202] text-base-content flex justify-center items-center">
-            {/* Sidebar content here */}
-           <p className="text-4xl text-black my-2 rounded-sm  bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
-           <p className="text-4xl text-black my-2 rounded-sm bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
-           <p className="text-4xl text-black my-2 rounded-sm bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
-           <p className="text-4xl text-black my-2 rounded-sm bg-gradient-to-tr w-full from-blue-800 via-sky-300 to-violet-500 text-center">Home</p>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <a>Item 1</a>
+            </li>
+           
+            <li>
+              <a>Item 3</a>
+            </li>
+           
+            <li>
+              <a>Item 3</a>
+            </li>
+           
+            <li>
+              <a>Item 3</a>
+            </li>
           </ul>
         </div>
-      
+        <div className="w-1/2 flex justify-end text-black">
+        <div className="dropdown dropdown-end">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle avatar"
+          >
+            <div className="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+              />
+            </div>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a className="justify-between">
+                Profile
+               
+              </a>
+            </li>
+            <li>
+              <a>Settings</a>
+            </li>
+            <li>
+              <a>Logout</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      </div>
+    
     </div>
   );
 };
