@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="bg-black text-white">
@@ -37,16 +39,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
+         
+           <li>
+              <a href="/">Home</a>
             </li>
            
             <li>
               <a>Item 3</a>
             </li>
            
-            <li>
-              <a>Item 3</a>
+          
+           <li>
+              <a href="#user">USER</a>
             </li>
            
             <li>
