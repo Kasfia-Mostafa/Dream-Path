@@ -22,77 +22,60 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a>Item 1</a>
-              </li>
-             
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
           </div>
           <a className="btn btn-ghost text-xl">Dream Path</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-         
-           <li>
-              <a href="/">Home</a>
-            </li>
-           
             <li>
-              <a>Item 3</a>
+              <a href="#home">Home</a>
             </li>
-           
-          
-           <li>
-              <a href="#user">USER</a>
+
+            <li>
+              <a>Dashboard</a>
             </li>
-           
+
+            {/* <Link to='user'> */}
+            <li>
+              <a href="#user">Advice</a>
+            </li>
+            {/* </Link> */}
             <li>
               <a>Item 3</a>
             </li>
           </ul>
         </div>
         <div className="w-1/2 flex justify-end text-black">
-        <div className="dropdown dropdown-end">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle avatar"
-          >
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+          <div className="dropdown dropdown-end">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar"
+            >
+              <div className="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
+              </div>
             </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a className="justify-between">Profile</a>
+              </li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li>
+                <a>Logout</a>
+              </li>
+            </ul>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a className="justify-between">
-                Profile
-               
-              </a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
         </div>
       </div>
-      </div>
-    
     </div>
   );
 };
