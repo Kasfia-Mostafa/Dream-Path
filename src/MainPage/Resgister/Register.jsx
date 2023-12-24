@@ -21,6 +21,17 @@ const Register = () => {
 
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-300">
+              Profile Image
+            </label>
+            <input
+              className="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
+              name="photo"
+              id="photo"
+              type="text"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-300">
               Email Address
             </label>
             <input
